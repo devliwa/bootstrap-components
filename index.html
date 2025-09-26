@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftMove - Relocation Experts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #15313c !important;
+    }
+
+    .navbar .nav-link {
+      color: #f8f9fa !important;
+      transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover {
+      color: #0d6efd !important;
+    }
+
+    .navbar-brand span {
+      color: #0d6efd !important;
+    }
+
+    .navbar-brand img {
+      height: 35px;
+      margin-right: 8px;
+    }
+
+    /* Hero section */
+    .hero-img {
+      max-width: 650px;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Features */
+    #features {
+      background: #15313c;
+      color: #f8f9fa;
+    }
+
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.75rem;
+      transition: transform 0.3s ease;
+    }
+
+    .feature-icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* Carousel */
+    .carousel-inner img {
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .carousel {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* Footer */
+    footer {
+      background: #15313c;
+      color: #adb5bd;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #adb5bd;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #0d6efd;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./box-seam.svg" alt="SwiftMove logo">
+        <span class="fw-bold">SwiftMove</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Company</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Solutions</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Residential Moving</a></li>
+              <li><a class="dropdown-item" href="#">Corporate Relocation</a></li>
+              <li><a class="dropdown-item" href="#">Packing Services</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex ms-lg-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Enter ZIP Code">
+          <button class="btn btn-outline-primary" type="submit">Check</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="px-4 pt-5 my-5 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Moving Made Effortless</h1>
+    <div class="col-lg-7 mx-auto">
+      <p class="lead mb-4">
+        SwiftMove provides expert relocation services nationwide, ensuring efficiency, safety, and peace of mind for
+        every client.
+      </p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button class="btn btn-primary btn-lg px-4 me-sm-3">Request a Quote</button>
+        <button class="btn btn-outline-secondary btn-lg px-4">Contact Us</button>
+      </div>
+    </div>
+    <div class="overflow-hidden">
+      <div class="container px-5">
+        <img src="./moving-van.png" class="img-fluid border rounded-3 shadow-lg hero-img" alt="SwiftMove truck">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="px-4 py-5">
+    <div class="container text-center">
+      <h2 class="pb-2">Why Choose SwiftMove?</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon bg-primary text-white d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+            <img src="./briefcase.svg" alt="Expert Team" height="28">
+          </div>
+          <h3 class="fs-3">Expert Team</h3>
+          <p>Professional movers trained to handle your belongings with care and precision.</p>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon bg-success text-white d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+            <img src="./bus-front.svg" alt="Nationwide Coverage" height="28">
+          </div>
+          <h3 class="fs-3">Nationwide Coverage</h3>
+          <p>From local to long-distance relocations, we provide transparent and reliable service.</p>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon bg-warning text-white d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+            <img src="./chat-square-heart.svg" alt="Customer Focus" height="28">
+          </div>
+          <h3 class="fs-3">Customer Focus</h3>
+          <p>Your satisfaction is our priority — we make moving a positive experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel -->
+  <div class="container py-5">
+    <div id="carouselExampleIndicators" class="carousel slide shadow">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./couple.png" class="d-block w-100" alt="Happy couple moving">
+        </div>
+        <div class="carousel-item">
+          <img src="./dog.png" class="d-block w-100" alt="Dog with moving boxes">
+        </div>
+        <div class="carousel-item">
+          <img src="./family.png" class="d-block w-100" alt="Family moving together">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 SwiftMove | <a href="#">About</a> | <a href="#">Services</a> | <a href="#">Contact</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
